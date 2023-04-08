@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--secondary);
+    font-family: "DM Serif Display", serif;
+  }
+  
+  p,
+  span,
+  a {
+    color: var(--text-primary);
+    font-family: "Jost", sans-serif;
+  }
+
+  .container{
+    margin: 0 auto;
+    width: 1200px;
+  }

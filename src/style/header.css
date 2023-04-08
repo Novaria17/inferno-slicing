@@ -1,0 +1,43 @@
+header{
+    padding: 42px 0;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div {
+    display: flex;
+    gap: 15px;
+}
+
+nav div a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+    position: relative;
+}
+
+.nav-active, nav div a:hover {
+    color: var(--primary);
+}
+
+nav div a::after {
+    bottom: -5px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    transition-property: background-color, width;
+    width: 0;
+   
+}
+
+nav div a:hover::after {
+    background-color: var(--primary);
+    width: 100%;
+}
